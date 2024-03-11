@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container my-4">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="text-center text-lg-left">Event Name Placeholder</h1>
+                <h2 class="dates">Event Date Placeholder</h2>
+                <p class="lead text-muted">Event Subtitle Placeholder</p>
+                <section class="event-details-text mb-4">
+                    <p>This section contains details about the event. It's designed to give attendees all the necessary information, including event description, objectives, and any special instructions.</p>
+                    <p>Everyone is welcome to join us for this event.</p>
+                    <p>Event Location Details Placeholder</p>
+                    <p>The event will take place on [Event Date], at [Event Time] at [Location Address]. Additional details about event proceedings will be provided closer to the date.</p>
+                </section>
+                <div class="calendar-buttons">
+                    <a href="#" id="google-calendar" class="btn btn-dark">Add to Google Calendar</a>
+                    <a href="#" id="icalendar" class="btn btn-secondary">Add to iCalendar</a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img src="./images/event-placeholder-image.jpeg" alt="Event Placeholder Image" class="img-fluid rounded-circle fade-in">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section id="maps" class="my-4">
+            <h3>Event Locations</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="map1" class="map"></div>
+                    <p class="text-center mt-2">Main Event Location</p>
+                </div>
+                <div class="col-md-6">
+                    <div id="map2" class="map"></div>
+                    <p class="text-center mt-2">Secondary Event Location</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center my-4">
+        <p>A Demo Event Management Site</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
